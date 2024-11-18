@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seat Selection</title>
+    <link rel="stylesheet" href="/css/seats.css">
+</head>
+<body>
+    <nav>
+        <a href="/">Book-a-Bus</a>
+        <ul class="link-container">
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Help</a></li>
+        </ul>
+    </nav>
+
+    <h1>Seat Selection for {{bus.name}} from {{bus.from}} to {{bus.to}}</h1>
+
+    <div class="seats">
+        <!-- Loop through each row of seats in the bus -->
+        {{#each bus.seats}}
+            <div class="row {{bus.layout}}">
+                <!-- Loop through each seat in a row -->
+                {{#each this}}
+                    <button 
+                        class="seat {{#if this}}booked{{else}}available{{/if}}" 
+                        {{#if this}}disabled{{/if}}>
+                    </button>
+                {{/each}}
+            </div>
+        {{/each}}
+    </div>
+
+    <button id="book-btn">Book</button>
+
+    <script src="/js/app.js"></script>
+</body>
+</html>

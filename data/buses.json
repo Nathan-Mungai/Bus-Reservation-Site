@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "name":"Easy Coach",
+        "departure": "9:00 am",
+        "arrival": "6:00 pm",
+        "price": "Ksh. 2000",
+        "from": "Nairobi",
+        "to": "Mombasa",
+        "layout": "layout-2-2",
+        "seats": [
+            [true, true, true, false],
+            [false, false, false, false],
+            [false, false, false, false],
+            [false, true, false, false],
+            [false, false, false, false],
+            [false, false, false, false, false]
+        ]
+    },
+    {
+        "id": 2,
+        "name":"Easy Coach",
+        "departure": "9:00 am",
+        "arrival": "6:00 pm",
+        "price": "Ksh. 2000",
+        "from": "Kisumu",
+        "to": "Nairobi",
+        "layout": "layout-2-2",
+        "seats": [
+            [false, false, false, false],
+            [true, false, false, false],
+            [false, false, true, false],
+            [false, false, false, false],
+            [false, false, false, false],
+            [true, true, true, true, true]
+        ]
+    },
+    {
+        "id": 3,
+        "name":"Climax",
+        "departure": "8:00 am",
+        "arrival": "5:00 pm",
+        "price": "Ksh. 2500",
+        "from": "Nairobi",
+        "to": "Mombasa",
+        "layout": "layout-2-2",
+        "seats": [
+            [true, false, false, false],
+            [true, true, false, false],
+            [false, false, false, false],
+            [false, true, false, false],
+            [false, false, false, false],
+            [false, false, true, false, false]
+        ]
+    },
+    {
+        "id": 4,
+        "name":"Climax",
+        "departure": "8:00 am",
+        "arrival": "5:00 pm",
+        "price": "Ksh. 2500",
+        "from": "Nairobi",
+        "to": "Eldoret",
+        "layout": "layout-2-2",
+        "seats": [
+            [true, true, true, true],
+            [true, true, true, true],
+            [true, true, false, false],
+            [true, true, true, false],
+            [true, true, true, true],
+            [true, true, true, false, true]
+        ]
+    },
+    {
+        "id": 5,
+        "name":"Mash Poa",
+        "departure": "6:00 am",
+        "arrival": "4:00 pm",
+        "price": "Ksh. 4500",
+        "from": "Eldoret",
+        "to": "Mombasa",
+        "layout": "layout-2-2",
+        "seats": [
+            [false, false, true, true],
+            [false, false, false, false],
+            [false, false, false, false],
+            [false, false, false, false],
+            [false, false, false, false],
+            [false, false, false, true, true]
+        ]
+    }
+]

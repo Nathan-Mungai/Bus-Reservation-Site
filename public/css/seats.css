@@ -1,0 +1,72 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+/* Navbar */
+nav {
+    height: 50px;
+    background-color: #ff6f00;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+nav a {
+    font-size: 1.5rem;
+    color: white;
+    font-weight: bold;
+}
+
+.link-container {
+    list-style: none;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.link-container a:hover {
+    color: blue;
+}
+
+.seats {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Layout for 2-2 seats (two seats on left, aisle, two seats on right) */
+.row .layout-2-2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr) 1fr repeat(2, 1fr); /* 2 seats, aisle, 2 seats */
+    gap: 10px;
+    margin-bottom: 20px;
+}
+/* Seat Styles */
+.seat {
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.seat.booked {
+    background-color: red;
+    cursor: not-allowed;
+}
+
+.seat.available {
+    background-color: grey;
+}
+
+.seat.selected {
+    background-color: green;
+}

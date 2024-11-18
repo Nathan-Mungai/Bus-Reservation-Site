@@ -1,0 +1,213 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+}
+
+/*navbar*/
+
+nav {
+  height: 50px;
+  background-color: #ff6f00;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+nav a {
+  font-size: 1.5rem;
+  color: white;
+  font-weight: bold;
+}
+
+.link-container{
+  list-style: none;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+.link-container a:hover{
+  color: blue;
+}
+.link-container svg{
+  transition: all 0.15s ease;
+}
+.link-container a:hover svg{
+  fill: blue;
+}
+/*search*/
+.search-container{
+  margin: 0 auto;
+  width:80% ;
+  background-color: aliceblue;
+  padding: 60px 100px;
+  border-radius: 50px;
+  margin-bottom: 50px;
+}
+.search-container form{
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.form-section{
+  display: flex;
+  gap: 10px;
+}
+.form-section select{
+  border-radius: 10px;
+  border: 1px solid black;
+  text-align: center;
+  width: 200px;
+  max-width: auto;
+}
+.search-container form button{
+  padding: 2px 40px;
+  border-radius: 10px;
+  border: 1px solid black;
+}
+/*benefits and partners*/
+.benefits{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 0 10px;
+  flex-wrap: wrap;
+}
+body h3{
+  text-align: center;
+  font-size: 2rem;
+}
+.benefits-card{
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 5px 10px 50px 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  width: 31%;
+}
+.benefits-card h3{
+  font-size:0.9rem ;
+  letter-spacing: 2px;
+}
+.benefits-card p{
+  font-size: 0.75rem;
+}
+
+
+.partners{
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+}
+.partners h3{
+  align-self: center;
+  font-size: 2rem;
+}
+.partners p{
+  align-self: center;
+  font-size: 1.25rem;
+}
+/* marquee css */
+.item{
+  height: 100px;
+  width: 150px;
+  border-radius: 10px;
+  position: absolute;
+  left: max((150px * 7), 100%) ;
+  animation-name: scrollleft;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes scrollleft {
+  to{
+      left:-150px;
+  }
+  
+}
+.wrapper{
+  position: relative;
+  height: 100px;
+  margin: 50px 20px;
+  overflow: hidden;
+  mask-image: linear-gradient(to right,
+  rgba(0,0,0,0),
+  rgba(0,0,0,1) 20%,
+  rgba(0,0,0,1) 80%,
+  rgba(0,0,0,0));
+}
+.item1{
+  animation-delay:calc(25s / 7 * (7 - 1) * -1) ;
+  background-color:red;
+}
+.item2{
+  animation-delay:calc(25s / 7 * (7 - 2) * -1) ;
+  background-color:orange;
+}
+.item3{
+  animation-delay:calc(25s / 7 * (7 - 3) * -1) ;
+  background-color:yellow;
+}
+.item4{
+  animation-delay:calc(25s / 7 * (7 - 4) * -1) ;
+  background-color:green;
+}
+.item5{
+  animation-delay:calc(25s / 7 * (7 - 5) * -1) ;
+  background-color:blue;
+}
+.item6{
+  animation-delay:calc(25s / 7 * (7 - 6) * -1) ;
+  background-color:indigo;
+}
+.item7{
+  animation-delay:calc(25s / 7 * (7 - 7) * -1) ;
+  background-color:violet;
+}
+/*marquee css ends*/
+
+/*footer*/
+.footer{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  height: 300px;
+  margin-top: 20px;
+  background-color: #f6f6e9;
+}
+.footer a{
+  color: black;
+  text-shadow: 1px 1px 3px white;
+}
+.footer a:hover{
+  color: blue;
+  transform: translateY(-1px);
+}
+.socials{
+  margin-top: 20px;
+  margin-left: 50px;
+  margin-right: auto;
+}
+.socials svg{
+  fill: blue;
+  transition: all 0.5s ease-in-out;
+}
+.socials svg:hover{
+  fill: orange;
+  transform: translateY(-3px);
+  scale: 1.1;
+}
+.footer-container{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
