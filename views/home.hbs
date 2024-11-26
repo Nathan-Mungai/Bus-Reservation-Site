@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Book-a-Bus - Home</title>
+    <title>QuickRide Kenya - Home</title>
     <link rel="stylesheet" href="/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,10 +12,10 @@
 <body>
     <!--navbar-->
     <nav>
-        <a href="/">Book-a-Bus</a>
+        <a href="/">QuickRide Kenya</a>
         <ul class="link-container">
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Help</a></li>
+            <li><a href="/about">About us</a></li>
+            <li><a href="/help">Help</a></li>
         </ul>
     </nav>
 
@@ -24,21 +24,11 @@
         <form action="results" method="GET">
             <div class="form-section">
                 <label for="From">From:</label>
-                <select name="from" id="From" required>
-                    <option value="Nairobi">Nairobi</option>
-                    <option value="Mombasa">Mombasa</option>
-                    <option value="Kisumu">Kisumu</option>
-                    <option value="Eldoret">Eldoret</option>
-                </select>
+                <input name="from" id="From" required>
         </div>
             <div class="form-section">
                 <label for="To">To:</label>
-                <select name="to" id="To" required>
-                    <option value="Mombasa">Mombasa</option>
-                    <option value="Kisumu">Kisumu</option>
-                    <option value="Eldoret">Eldoret</option>
-                    <option value="Nairobi">Nairobi</option>
-            </select>
+                <input name="to" id="To" required>
         </div>
             
             <button type="submit">Search</button>
@@ -49,14 +39,17 @@
     <h3>WHY CHOOSE US</h3>
     <div class="benefits">
         <div class="benefits-card">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M560-440q-50 0-85-35t-35-85q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35ZM280-320q-33 0-56.5-23.5T200-400v-320q0-33 23.5-56.5T280-800h560q33 0 56.5 23.5T920-720v320q0 33-23.5 56.5T840-320H280Zm80-80h400q0-33 23.5-56.5T840-480v-160q-33 0-56.5-23.5T760-720H360q0 33-23.5 56.5T280-640v160q33 0 56.5 23.5T360-400Zm440 240H120q-33 0-56.5-23.5T40-240v-440h80v440h680v80ZM280-400v-320 320Z"/></svg>
             <h3>Flexible Payments</h3>
             <p>Pay with M-pesa, credit cards or bank transfers. We have you fully covered.</p>
         </div>
         <div class="benefits-card">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M440-120v-80h320v-284q0-117-81.5-198.5T480-764q-117 0-198.5 81.5T200-484v244h-40q-33 0-56.5-23.5T80-320v-80q0-21 10.5-39.5T120-469l3-53q8-68 39.5-126t79-101q47.5-43 109-67T480-840q68 0 129 24t109 66.5Q766-707 797-649t40 126l3 52q19 9 29.5 27t10.5 38v92q0 20-10.5 38T840-249v49q0 33-23.5 56.5T760-120H440Zm-80-280q-17 0-28.5-11.5T320-440q0-17 11.5-28.5T360-480q17 0 28.5 11.5T400-440q0 17-11.5 28.5T360-400Zm240 0q-17 0-28.5-11.5T560-440q0-17 11.5-28.5T600-480q17 0 28.5 11.5T640-440q0 17-11.5 28.5T600-400Zm-359-62q-7-106 64-182t177-76q89 0 156.5 56.5T720-519q-91-1-167.5-49T435-698q-16 80-67.5 142.5T241-462Z"/></svg>
             <h3>Great Customer Care</h3>
             <p>Get excellent customer service available 8:00 AM to 10:00 PM, via phone, chat, or email.</p>
         </div>
         <div class="benefits-card">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M360-240h220q17 0 31.5-8.5T632-272l84-196q2-5 3-10t1-10v-32q0-17-11.5-28.5T680-560H496l24-136q2-10-1-19t-10-16l-29-29-184 200q-8 8-12 18t-4 22v200q0 33 23.5 56.5T360-240ZM480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>
             <h3>Enjoy Convenience</h3>
             <p>Book anytime from the convenience of your office, home, school, or market.</p>
         </div>
@@ -67,13 +60,27 @@
         <h3>Our Partners</h3>
         <p>These bus operators trust us. We sell their tickets all in one place.</p>
         <div class="wrapper">
-            <div class="item item1"></div>
-            <div class="item item2"></div>
-            <div class="item item3"></div>
-            <div class="item item4"></div>
-            <div class="item item5"></div>
-            <div class="item item6"></div>
-            <div class="item item7"></div>
+            <div class="item item1">
+                <img src="/images/easycoach.jpg" alt="">
+            </div>
+            <div class="item item2">
+                <img src="/images/climax.jpg" alt="">
+            </div>
+            <div class="item item3">
+                <img src="/images/greenline.jpg" alt="">
+            </div>
+            <div class="item item4">
+                <img src="/images/impala.jpg" alt="">
+            </div>
+            <div class="item item5">
+                <img src="/images/mash-poa.png" alt="">
+            </div>
+            <div class="item item6">
+                <img src="/images/smartcoach.jpg" alt="">
+            </div>
+            <div class="item item7">
+                <img src="/images/taran.jpg" alt="">
+            </div>
         </div>
     </div>
 
@@ -87,11 +94,13 @@
             <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px">    <path d="M12,2C6.477,2,2,6.477,2,12c0,5.013,3.693,9.153,8.505,9.876V14.65H8.031v-2.629h2.474v-1.749 c0-2.896,1.411-4.167,3.818-4.167c1.153,0,1.762,0.085,2.051,0.124v2.294h-1.642c-1.022,0-1.379,0.969-1.379,2.061v1.437h2.995 l-0.406,2.629h-2.588v7.247C18.235,21.236,22,17.062,22,12C22,6.477,17.523,2,12,2z"/></svg>
             <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px">    <path d="M 8 3 C 5.239 3 3 5.239 3 8 L 3 16 C 3 18.761 5.239 21 8 21 L 16 21 C 18.761 21 21 18.761 21 16 L 21 8 C 21 5.239 18.761 3 16 3 L 8 3 z M 18 5 C 18.552 5 19 5.448 19 6 C 19 6.552 18.552 7 18 7 C 17.448 7 17 6.552 17 6 C 17 5.448 17.448 5 18 5 z M 12 7 C 14.761 7 17 9.239 17 12 C 17 14.761 14.761 17 12 17 C 9.239 17 7 14.761 7 12 C 7 9.239 9.239 7 12 7 z M 12 9 A 3 3 0 0 0 9 12 A 3 3 0 0 0 12 15 A 3 3 0 0 0 15 12 A 3 3 0 0 0 12 9 z"/></svg>
             <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 24 24" width="24px" height="24px">    <path d="M22,3.999c-0.78,0.463-2.345,1.094-3.265,1.276c-0.027,0.007-0.049,0.016-0.075,0.023c-0.813-0.802-1.927-1.299-3.16-1.299 c-2.485,0-4.5,2.015-4.5,4.5c0,0.131-0.011,0.372,0,0.5c-3.353,0-5.905-1.756-7.735-4c-0.199,0.5-0.286,1.29-0.286,2.032 c0,1.401,1.095,2.777,2.8,3.63c-0.314,0.081-0.66,0.139-1.02,0.139c-0.581,0-1.196-0.153-1.759-0.617c0,0.017,0,0.033,0,0.051 c0,1.958,2.078,3.291,3.926,3.662c-0.375,0.221-1.131,0.243-1.5,0.243c-0.26,0-1.18-0.119-1.426-0.165 c0.514,1.605,2.368,2.507,4.135,2.539c-1.382,1.084-2.341,1.486-5.171,1.486H2C3.788,19.145,6.065,20,8.347,20 C15.777,20,20,14.337,20,8.999c0-0.086-0.002-0.266-0.005-0.447C19.995,8.534,20,8.517,20,8.499c0-0.027-0.008-0.053-0.008-0.08 c-0.003-0.136-0.006-0.263-0.009-0.329c0.79-0.57,1.475-1.281,2.017-2.091c-0.725,0.322-1.503,0.538-2.32,0.636 C20.514,6.135,21.699,4.943,22,3.999z"/></svg>
+            <br>
+            <button id="theme-toggle">Switch Theme</button>
         </div>
         <div class="footer-container">
             <p>The Company</p>
-            <a href="#">About us</a>
-            <a href="#">Contact us</a>
+            <a href="/about">About us</a>
+            <a href="/help">Contact us</a>
             <a href="#">Privacy Policy</a>
             <a href="#">Terms and Conditions</a>
         </div>
@@ -101,6 +110,8 @@
             <a href="/results?from=Nairobi&to=Kisumu">Nairobi - Kisumu</a>
             <a href="/results?from=Nairobi&to=Eldoret">Nairobi - Eldoret</a>
         </div>
+        
     </div>
+    <script src="/js/theme.js"></script>
 </body>
 </html>

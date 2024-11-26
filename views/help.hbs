@@ -3,13 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bus Search Results</title>
-    <link rel="stylesheet" href="/css/results.css">
+    <title>QuickRide Kenya - Help</title>
+    <link rel="stylesheet" href="/css/help.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!--navbar-->
     <nav>
         <a href="/">QuickRide Kenya</a>
         <ul class="link-container">
@@ -18,41 +19,37 @@
         </ul>
     </nav>
 
-    <!--Search Section-->
-    <div class="search-container">
-        <form action="results" method="GET">
-            <div class="form-section">
-                <label for="From">From:</label>
-                <input name="from" id="From" required>
-                   
-        </div>
-            <div class="form-section">
-                <label for="To">To:</label>
-                <input name="to" id="To" required>
-        </div>
-            
-            <button type="submit">Search</button>
-        </form>
-    </div>
+    <header>
+        <h1>Help & Support</h1>
+    </header>
 
-    <div class="results-container">
-        <h1>Available Buses from {{this.from}} to {{this.to}}</h1>
-        {{#each buses}}
-            <div class="bus-card">
-                <h3>{{this.name}}</h3>
-                <p>Departure: {{this.departure}}</p>
-                <p>Arrival: {{this.arrival}}</p>
-                <p>Price: {{this.price}}</p>
-                <br>
-                <a href="/select-seat/{{this.id}}">Select Seat</a>
-            </div>
-        {{else}}
-            <p>No buses found for this route.</p>
-        {{/each}}
-    </div>
-    <a href="/" class="home-btn">Back to Home</a>
+    <section>
+        <h2>How can we assist you?</h2>
+        <p>
+            At QuickRide Kenya, we are here to ensure your travel experience is smooth and worry-free. Below are some common issues and how to resolve them. 
+        </p>
 
-    <!--Footer-->
+        <h3>Frequently Asked Questions</h3>
+        <ul>
+            <li><strong>How do I book a seat?</strong> <br> Navigate to the booking page, select your route, choose your preferred bus, and pick an available seat. Confirm the booking to complete the process.</li>
+            <li><strong>Can I cancel my reservation?</strong> <br> Yes, cancellations can be made up to 24 hours before the scheduled departure time. Get in contact with us to cancel your booking.</li>
+            <li><strong>What payment methods do you accept?</strong> <br> We accept M-Pesa, credit/debit cards, and other mobile money services.</li>
+        </ul>
+
+        <h3>Technical Support</h3>
+        <p>
+            Having trouble using our website? Make sure you have a stable internet connection and are using an updated browser. For further assistance, contact us via the details below.
+        </p>
+
+        <div class="contact-section">
+            <h3>Contact Us</h3>
+            <p><strong>Email:</strong> support@quickridekenya.com</p>
+            <p><strong>Phone:</strong> +254 700 000 000</p>
+            <p><strong>WhatsApp:</strong> +254 711 111 111</p>
+        </div>
+    </section>
+
+     <!--Footer-->
     <div class="footer">
         <div class="socials">
             <a href="#">Book-a-Bus</a>
@@ -67,17 +64,16 @@
         <div class="footer-container">
             <p>The Company</p>
             <a href="/about">About us</a>
-            <a href="/help">Contact us</a>
+            <a href="#">Contact us</a>
             <a href="#">Privacy Policy</a>
             <a href="#">Terms and Conditions</a>
         </div>
-       <div class="footer-container">
+        <div class="footer-container">
             <p>Popular Routes</p>
             <a href="/results?from=Nairobi&to=Mombasa">Nairobi - Mombasa</a>
             <a href="/results?from=Nairobi&to=Kisumu">Nairobi - Kisumu</a>
             <a href="/results?from=Nairobi&to=Eldoret">Nairobi - Eldoret</a>
         </div>
-        
     </div>
     <script src="/js/theme.js"></script>
 </body>

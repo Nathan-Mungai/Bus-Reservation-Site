@@ -1,92 +1,1189 @@
 [
-    {
-        "id": 1,
-        "name":"Easy Coach",
-        "departure": "9:00 am",
-        "arrival": "6:00 pm",
-        "price": "Ksh. 2000",
-        "from": "Nairobi",
-        "to": "Mombasa",
-        "layout": "layout-2-2",
-        "seats": [
-            [true, true, true, false],
-            [false, false, false, false],
-            [false, false, false, false],
-            [false, true, false, false],
-            [false, false, false, false],
-            [false, false, false, false, false]
-        ]
-    },
-    {
-        "id": 2,
-        "name":"Easy Coach",
-        "departure": "9:00 am",
-        "arrival": "6:00 pm",
-        "price": "Ksh. 2000",
-        "from": "Kisumu",
-        "to": "Nairobi",
-        "layout": "layout-2-2",
-        "seats": [
-            [false, false, false, false],
-            [true, false, false, false],
-            [false, false, true, false],
-            [false, false, false, false],
-            [false, false, false, false],
-            [true, true, true, true, true]
-        ]
-    },
-    {
-        "id": 3,
-        "name":"Climax",
-        "departure": "8:00 am",
-        "arrival": "5:00 pm",
-        "price": "Ksh. 2500",
-        "from": "Nairobi",
-        "to": "Mombasa",
-        "layout": "layout-2-2",
-        "seats": [
-            [true, false, false, false],
-            [true, true, false, false],
-            [false, false, false, false],
-            [false, true, false, false],
-            [false, false, false, false],
-            [false, false, true, false, false]
-        ]
-    },
-    {
-        "id": 4,
-        "name":"Climax",
-        "departure": "8:00 am",
-        "arrival": "5:00 pm",
-        "price": "Ksh. 2500",
-        "from": "Nairobi",
-        "to": "Eldoret",
-        "layout": "layout-2-2",
-        "seats": [
-            [true, true, true, true],
-            [true, true, true, true],
-            [true, true, false, false],
-            [true, true, true, false],
-            [true, true, true, true],
-            [true, true, true, false, true]
-        ]
-    },
-    {
-        "id": 5,
-        "name":"Mash Poa",
-        "departure": "6:00 am",
-        "arrival": "4:00 pm",
-        "price": "Ksh. 4500",
-        "from": "Eldoret",
-        "to": "Mombasa",
-        "layout": "layout-2-2",
-        "seats": [
-            [false, false, true, true],
-            [false, false, false, false],
-            [false, false, false, false],
-            [false, false, false, false],
-            [false, false, false, false],
-            [false, false, false, true, true]
-        ]
-    }
+  {
+    "id": 1,
+    "name": "Easy Coach",
+    "departure": "9:00 am",
+    "arrival": "6:00 pm",
+    "price": "Ksh. 2000",
+    "from": "Nairobi",
+    "to": "Mombasa",
+    "layout": "layout-2-2",
+    "seats": [
+      [
+        true,
+        true,
+        true,
+        true
+      ],
+      [
+        false,
+        true,
+        false,
+        false
+      ],
+      [
+        false,
+        false,
+        true,
+        false
+      ],
+      [
+        false,
+        true,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        false
+      ],
+      [
+        false,
+        false,
+        false,
+        false,
+        true
+      ]
+    ]
+  },
+  {
+    "id": 2,
+    "name": "Easy Coach",
+    "departure": "9:00 am",
+    "arrival": "6:00 pm",
+    "price": "Ksh. 2000",
+    "from": "Kisumu",
+    "to": "Nairobi",
+    "layout": "layout-2-2",
+    "seats": [
+      [
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        true,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        false,
+        true,
+        false
+      ],
+      [
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ]
+  },
+  {
+    "id": 3,
+    "name": "Climax",
+    "departure": "8:00 am",
+    "arrival": "5:00 pm",
+    "price": "Ksh. 2500",
+    "from": "Nairobi",
+    "to": "Mombasa",
+    "layout": "layout-2-2",
+    "seats": [
+      [
+        true,
+        false,
+        false,
+        true
+      ],
+      [
+        true,
+        true,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        false
+      ],
+      [
+        false,
+        true,
+        false,
+        false
+      ],
+      [
+        true,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        false,
+        true,
+        true,
+        false
+      ]
+    ]
+  },
+  {
+    "id": 4,
+    "name": "Climax",
+    "departure": "8:00 am",
+    "arrival": "5:00 pm",
+    "price": "Ksh. 2500",
+    "from": "Nairobi",
+    "to": "Eldoret",
+    "layout": "layout-2-2",
+    "seats": [
+      [
+        true,
+        true,
+        true,
+        true
+      ],
+      [
+        true,
+        true,
+        true,
+        true
+      ],
+      [
+        true,
+        true,
+        false,
+        false
+      ],
+      [
+        true,
+        true,
+        true,
+        false
+      ],
+      [
+        true,
+        true,
+        true,
+        true
+      ],
+      [
+        true,
+        true,
+        true,
+        false,
+        true
+      ]
+    ]
+  },
+  {
+    "id": 5,
+    "name": "Mash Poa",
+    "departure": "6:00 am",
+    "arrival": "4:00 pm",
+    "price": "Ksh. 4500",
+    "from": "Eldoret",
+    "to": "Mombasa",
+    "layout": "layout-2-2",
+    "seats": [
+      [
+        false,
+        false,
+        true,
+        true
+      ],
+      [
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        false,
+        false,
+        true,
+        true
+      ]
+    ]
+  },
+  {
+    "id": 6,
+    "name": "Mash Poa",
+    "departure": "6:00 am",
+    "arrival": "4:00 pm",
+    "price": "Ksh. 3000",
+    "from": "Nairobi",
+    "to": "Mombasa",
+    "layout": "layout-3-2",
+    "seats": [
+      [
+        false,
+        false,
+        true,
+        true,
+        false
+      ],
+      [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        false,
+        true,
+        false,
+        true,
+        true
+      ]
+    ]
+  },
+  {
+    "id": 7,
+    "name": "Greenline",
+    "departure": "7:30 am",
+    "arrival": "5:30 pm",
+    "price": "Ksh. 1800",
+    "from": "Mombasa",
+    "to": "Nairobi",
+    "layout": "layout-2-2",
+    "seats": [
+      [
+        true,
+        false,
+        false,
+        true
+      ],
+      [
+        false,
+        true,
+        true,
+        false
+      ],
+      [
+        false,
+        true,
+        false,
+        false
+      ],
+      [
+        false,
+        false,
+        true,
+        false
+      ],
+      [
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        true,
+        false,
+        false,
+        true,
+        true
+      ]
+    ]
+  },
+  {
+    "id": 8,
+    "name": "Taran",
+    "departure": "8:30 am",
+    "arrival": "6:00 pm",
+    "price": "Ksh. 2200",
+    "from": "Mumias",
+    "to": "Nairobi",
+    "layout": "layout-3-2",
+    "seats": [
+      [
+        false,
+        true,
+        false,
+        false,
+        true
+      ],
+      [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        true,
+        true,
+        true,
+        false,
+        true,
+        false
+      ]
+    ]
+  },
+  {
+    "id": 9,
+    "name": "Impala",
+    "departure": "10:00 am",
+    "arrival": "7:00 pm",
+    "price": "Ksh. 3500",
+    "from": "Nairobi",
+    "to": "Busia",
+    "layout": "layout-3-2",
+    "seats": [
+      [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      [
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        false,
+        false
+      ],
+      [
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      [
+        true,
+        false,
+        true,
+        true,
+        true,
+        false
+      ]
+    ]
+  },
+  {
+    "id": 10,
+    "name": "Smartcoach",
+    "departure": "5:00 am",
+    "arrival": "3:00 pm",
+    "price": "Ksh. 4000",
+    "from": "Kisumu",
+    "to": "Mombasa",
+    "layout": "layout-2-2",
+    "seats": [
+      [
+        true,
+        true,
+        false,
+        true
+      ],
+      [
+        false,
+        false,
+        true,
+        false
+      ],
+      [
+        true,
+        true,
+        true,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true
+      ],
+      [
+        true,
+        false,
+        false,
+        true
+      ],
+      [
+        false,
+        false,
+        true,
+        true,
+        true
+      ]
+    ]
+  },
+  {
+    "id": 11,
+    "name": "Climax",
+    "departure": "7:00 am",
+    "arrival": "4:30 pm",
+    "price": "Ksh. 2200",
+    "from": "Nairobi",
+    "to": "Mumias",
+    "layout": "layout-3-2",
+    "seats": [
+      [
+        false,
+        true,
+        true,
+        false,
+        false
+      ],
+      [
+        false,
+        false,
+        false,
+        true,
+        true
+      ],
+      [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      [
+        true,
+        false,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        false,
+        true,
+        false
+      ]
+    ]
+  },
+  {
+    "id": 12,
+    "name": "Mash Poa",
+    "departure": "5:30 am",
+    "arrival": "3:30 pm",
+    "price": "Ksh. 3800",
+    "from": "Eldoret",
+    "to": "Kisumu",
+    "layout": "layout-2-2",
+    "seats": [
+      [
+        true,
+        false,
+        true,
+        false
+      ],
+      [
+        false,
+        true,
+        false,
+        true
+      ],
+      [
+        true,
+        true,
+        false,
+        false
+      ],
+      [
+        false,
+        false,
+        true,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true
+      ],
+      [
+        true,
+        true,
+        true,
+        true,
+        false
+      ]
+    ]
+  },
+  {
+    "id": 13,
+    "name": "Greenline",
+    "departure": "7:00 am",
+    "arrival": "3:30 pm",
+    "price": "Ksh. 2400",
+    "from": "Nairobi",
+    "to": "Nakuru",
+    "layout": "layout-2-2",
+    "seats": [
+      [
+        true,
+        true,
+        false,
+        true
+      ],
+      [
+        false,
+        false,
+        true,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        false
+      ],
+      [
+        true,
+        false,
+        true,
+        false
+      ],
+      [
+        false,
+        false,
+        true,
+        false
+      ],
+      [
+        true,
+        true,
+        true,
+        true,
+        true
+      ]
+    ]
+  },
+  {
+    "id": 14,
+    "name": "Taran",
+    "departure": "8:00 am",
+    "arrival": "5:00 pm",
+    "price": "Ksh. 2500",
+    "from": "Thika",
+    "to": "Nairobi",
+    "layout": "layout-3-2",
+    "seats": [
+      [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      [
+        false,
+        true,
+        false,
+        true,
+        false
+      ],
+      [
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      [
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      [
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      [
+        true,
+        false,
+        false,
+        true,
+        false,
+        true
+      ]
+    ]
+  },
+  {
+    "id": 15,
+    "name": "Mash Poa",
+    "departure": "7:30 am",
+    "arrival": "4:30 pm",
+    "price": "Ksh. 2700",
+    "from": "Kitengela",
+    "to": "Nairobi",
+    "layout": "layout-2-2",
+    "seats": [
+      [
+        true,
+        true,
+        true,
+        false
+      ],
+      [
+        false,
+        true,
+        false,
+        false
+      ],
+      [
+        true,
+        true,
+        false,
+        false
+      ],
+      [
+        false,
+        false,
+        true,
+        true
+      ],
+      [
+        false,
+        false,
+        false,
+        true
+      ],
+      [
+        true,
+        false,
+        false,
+        true,
+        true
+      ]
+    ]
+  },
+  {
+    "id": 16,
+    "name": "Impala",
+    "departure": "6:30 am",
+    "arrival": "4:00 pm",
+    "price": "Ksh. 3200",
+    "from": "Nakuru",
+    "to": "Mombasa",
+    "layout": "layout-3-2",
+    "seats": [
+      [
+        false,
+        true,
+        false,
+        true,
+        true
+      ],
+      [
+        false,
+        false,
+        true,
+        false,
+        true
+      ],
+      [
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
+      [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      [
+        false,
+        true,
+        true,
+        false,
+        false
+      ],
+      [
+        false,
+        false,
+        false,
+        true,
+        true,
+        false
+      ]
+    ]
+  },
+  {
+    "id": 17,
+    "name": "Climax",
+    "departure": "9:30 am",
+    "arrival": "7:00 pm",
+    "price": "Ksh. 2700",
+    "from": "Thika",
+    "to": "Mombasa",
+    "layout": "layout-3-2",
+    "seats": [
+      [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      [
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      [
+        false,
+        true,
+        false,
+        false,
+        true
+      ],
+      [
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
+      [
+        true,
+        false,
+        true,
+        false,
+        true
+      ],
+      [
+        false,
+        false,
+        false,
+        true,
+        true,
+        true
+      ]
+    ]
+  },
+  {
+    "id": 18,
+    "name": "Smartcoach",
+    "departure": "5:00 am",
+    "arrival": "3:00 pm",
+    "price": "Ksh. 4000",
+    "from": "Nakuru",
+    "to": "Mombasa",
+    "layout": "layout-2-2",
+    "seats": [
+      [
+        true,
+        false,
+        false,
+        true
+      ],
+      [
+        false,
+        true,
+        true,
+        false
+      ],
+      [
+        false,
+        true,
+        false,
+        false
+      ],
+      [
+        false,
+        false,
+        true,
+        false
+      ],
+      [
+        true,
+        true,
+        true,
+        true
+      ],
+      [
+        true,
+        false,
+        false,
+        true,
+        false
+      ]
+    ]
+  },
+  {
+    "id": 19,
+    "name": "Mash Poa",
+    "departure": "8:00 am",
+    "arrival": "6:00 pm",
+    "price": "Ksh. 2900",
+    "from": "Kitengela",
+    "to": "Eldoret",
+    "layout": "layout-3-2",
+    "seats": [
+      [
+        true,
+        true,
+        false,
+        false,
+        true
+      ],
+      [
+        false,
+        false,
+        false,
+        true,
+        false
+      ],
+      [
+        true,
+        false,
+        true,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        false,
+        true,
+        true
+      ],
+      [
+        true,
+        true,
+        false,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        false,
+        true
+      ]
+    ]
+  },
+  {
+    "id": 20,
+    "name": "Greenline",
+    "departure": "6:00 am",
+    "arrival": "3:00 pm",
+    "price": "Ksh. 2300",
+    "from": "Nakuru",
+    "to": "Mombasa",
+    "layout": "layout-2-2",
+    "seats": [
+      [
+        true,
+        false,
+        true,
+        false
+      ],
+      [
+        false,
+        true,
+        false,
+        true
+      ],
+      [
+        false,
+        false,
+        true,
+        true
+      ],
+      [
+        true,
+        true,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        false
+      ],
+      [
+        true,
+        false,
+        false,
+        true,
+        false
+      ]
+    ]
+  },
+  {
+    "id": 21,
+    "name": "Greenline",
+    "departure": "11:00 am",
+    "arrival": "7:00 pm",
+    "price": "Ksh. 3200",
+    "from": "Nairobi",
+    "to": "Kisumu",
+    "layout": "layout-2-2",
+    "seats": [
+      [
+        true,
+        true,
+        false,
+        true
+      ],
+      [
+        false,
+        false,
+        true,
+        true
+      ],
+      [
+        true,
+        true,
+        false,
+        false
+      ],
+      [
+        true,
+        true,
+        true,
+        false
+      ],
+      [
+        true,
+        false,
+        false,
+        false
+      ],
+      [
+        true,
+        true,
+        true,
+        false,
+        false
+      ]
+    ]
+  },
+  {
+    "id": 22,
+    "name": "Easy Coach",
+    "departure": "6:30 am",
+    "arrival": "2:30 pm",
+    "price": "Ksh. 2700",
+    "from": "Nairobi",
+    "to": "Kisumu",
+    "layout": "layout-3-2",
+    "seats": [
+      [
+        false,
+        false,
+        true,
+        true,
+        false
+      ],
+      [
+        false,
+        true,
+        false,
+        false,
+        false
+      ],
+      [
+        true,
+        false,
+        false,
+        true,
+        true
+      ],
+      [
+        false,
+        false,
+        true,
+        false,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        true,
+        false
+      ],
+      [
+        false,
+        true,
+        false,
+        true,
+        true,
+        true
+      ]
+    ]
+  },
+  {
+    "id": 23,
+    "name": "Taran",
+    "departure": "9:00 am",
+    "arrival": "5:00 pm",
+    "price": "Ksh. 3500",
+    "from": "Nairobi",
+    "to": "Kisumu",
+    "layout": "layout-3-2",
+    "seats": [
+      [
+        true,
+        true,
+        false,
+        true,
+        false
+      ],
+      [
+        false,
+        true,
+        true,
+        false,
+        true
+      ],
+      [
+        false,
+        true,
+        false,
+        true,
+        true
+      ],
+      [
+        true,
+        true,
+        true,
+        false,
+        true
+      ],
+      [
+        false,
+        false,
+        true,
+        false,
+        true
+      ],
+      [
+        true,
+        false,
+        true,
+        true,
+        false,
+        false
+      ]
+    ]
+  }
 ]

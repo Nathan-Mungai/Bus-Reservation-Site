@@ -5,18 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seat Selection</title>
     <link rel="stylesheet" href="/css/seats.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav>
-        <a href="/">Book-a-Bus</a>
+        <a href="/">QuickRide Kenya</a>
         <ul class="link-container">
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Help</a></li>
+            <li><a href="/about">About us</a></li>
+            <li><a href="/help">Help</a></li>
         </ul>
     </nav>
 
-    <h1>Seat Selection for {{bus.name}} from {{bus.from}} to {{bus.to}}</h1>
-
+    <h1>Choose a seat on {{bus.name}} from {{bus.from}} to {{bus.to}}</h1>
+    {{!-- <div class="wheel-icon">
+    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e8eaed"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-40-84v-120q-60-12-102-54t-54-102H164q12 109 89.5 185T440-164Zm80 0q109-12 186.5-89.5T796-440H676q-12 60-54 102t-102 54v120ZM164-520h116l120-120h160l120 120h116q-15-121-105-200.5T480-800q-121 0-211 79.5T164-520Z"/></svg>
+    </div> --}}
     <div class="seats">
         <!-- Loop through each row of seats in the bus -->
         {{#each bus.seats}}
@@ -32,8 +37,13 @@
         {{/each}}
     </div>
 
-    <button id="book-btn">Book</button>
+    <div class="book">
+
+    <button id="book-btn">Book this seat</button>
+    
+    </div>
 
     <script src="/js/app.js"></script>
+    <script src="/js/theme.js"></script>
 </body>
 </html>
