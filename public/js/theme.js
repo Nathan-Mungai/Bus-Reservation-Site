@@ -1,27 +1,19 @@
 // theme.js
 
 // Select the theme toggle button
-const themeToggle = document.getElementById('theme-toggle');
+const themeToggle = document.getElementById("theme-toggle");
 
 // Check localStorage for saved theme
-const savedTheme = localStorage.getItem('theme');
+const savedTheme = localStorage.getItem("theme");
 if (savedTheme) {
-    document.body.classList.add(savedTheme);
-    updateButtonText(savedTheme);
+  document.body.classList.add(savedTheme);
 }
 
 // Toggle theme on button click
-themeToggle.addEventListener('click', () => {
-    const isLightTheme = document.body.classList.toggle('light');
-    const theme = isLightTheme ? 'light' : 'dark';
+themeToggle.addEventListener("click", () => {
+  const isLightTheme = document.body.classList.toggle("light");
+  const theme = isLightTheme ? "light" : "dark";
 
-    // Save the user's theme choice to localStorage
-    localStorage.setItem('theme', theme);
-
-    // Update button text
-    updateButtonText(theme);
+  // Save the user's theme choice to localStorage
+  localStorage.setItem("theme", theme);
 });
-
-function updateButtonText(theme) {
-    themeToggle.textContent = theme === 'light' ? 'Switch to Dark Theme' : 'Switch to Light Theme';
-}

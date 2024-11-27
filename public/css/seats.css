@@ -1,83 +1,87 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-    text-decoration: none;
-    color: var(--text-color);
-  }
-  body{
-    background-color: var(--background-color);
-  }
-  :root{
-    --primary-color:#D32F2F;
-    --background-color:#2A2A2A ;
-    --secondary-color:#FFEB3B;
-    --tertiary-color:#FF9800;
-    --text-color:#E0E0E0;
-    --shadow-color:#333333;
-    --button-color:#FF5722;
-    --reject-color:#DF0D0D;
-    --accept-color:#00BF10;
-  }
-  .light{
-    --primary-color:#F44336;
-    --background-color:#FFF3E0 ;
-    --secondary-color:#FFEB3B;
-    --tertiary-color:#FF9800;
-    --text-color:#212121;
-    --shadow-color:#333333;
-    --button-color:#FF5722;
-  
-  }
-  /*navbar*/
-  
-  nav {
-    height: 50px;
-    background-color: var(--primary-color);
-    box-shadow: 0 1px 3px var(--shadow-color);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 20px;
-  }
-  
-  nav a {
-    font-size: 1.5rem;
-    color: var(--text-color);
-    font-weight: bold;
-  }
-  
-  .link-container{
-    list-style: none;
-    gap: 10px;
-    display: flex;
-    align-items: center;
-  }
-  .link-container a{
-    margin-right: 20px;
-  }
-  .link-container a:hover{
-    color: var(--secondary-color);
-  }
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  color: var(--text-color);
+}
+body {
+  background-color: var(--background-color);
+}
+:root {
+  --primary-color: #d32f2f;
+  --background-color: #2a2a2a;
+  --secondary-color: #ffeb3b;
+  --tertiary-color: #ff9800;
+  --text-color: #e0e0e0;
+  --shadow-color: #333333;
+  --button-color: #ff5722;
+  --reject-color: #df0d0d;
+  --accept-color: #00bf10;
+}
+.light {
+  --primary-color: #d32f2f;
+  --background-color: #fff3e0;
+  --secondary-color: #ffeb3b;
+  --tertiary-color: #ff9800;
+  --text-color: #212121;
+  --shadow-color: #333333;
+  --button-color: #ff5722;
+}
+/*navbar*/
 
-h1{
-    text-align: center;
+nav {
+  height: 50px;
+  background-color: var(--primary-color);
+  box-shadow: 0 1px 3px var(--shadow-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+nav a {
+  font-size: 1.5rem;
+  color: var(--text-color);
+  font-weight: bold;
+}
+
+.link-container {
+  list-style: none;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+.link-container a {
+  margin-right: 20px;
+  transition: color 0.5s ease-in-out, padding 0.4s ease-in-out,
+    background-color 0.4s ease-in-out, border-radius 0.4s ease-in-out;
+}
+.link-container a:hover {
+  color: var(--button-color);
+  padding: 4px 8px;
+  border-radius: 25px;
+  background-color: var(--secondary-color);
+}
+
+h1 {
+  text-align: center;
 }
 
 .seats {
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    margin: 50px 0;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 50px 0;
+  justify-content: center;
+  align-items: center;
 }
-.wheel-icon{
+.wheel-icon {
   position: relative;
   margin-top: 15px;
 }
-.wheel-icon svg{
+.wheel-icon svg {
   margin-bottom: 10px;
   fill: var(--text-color);
   position: absolute;
@@ -87,35 +91,35 @@ h1{
 
 /* Layout for 2-2 seats (two seats on left, aisle, two seats on right) */
 .row .layout-2-2 {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr) 50px repeat(2, 1fr); /* 2 seats, aisle, 2 seats */
-    gap: 10px;
-    margin-bottom: 20px;
-}
-.row .layout-3-2{
   display: grid;
-    grid-template-columns: repeat(3, 1fr) 50px repeat(2, 1fr); /* 3 seats, aisle, 2 seats */
-    gap: 10px;
-    margin-bottom: 20px;
+  grid-template-columns: repeat(2, 1fr) 50px repeat(2, 1fr); /* 2 seats, aisle, 2 seats */
+  gap: 10px;
+  margin-bottom: 20px;
+}
+.row .layout-3-2 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) 50px repeat(2, 1fr); /* 3 seats, aisle, 2 seats */
+  gap: 10px;
+  margin-bottom: 20px;
 }
 
-.seat:nth-child(2){
+.seat:nth-child(2) {
   margin-right: 50px;
 }
-.row:last-child .seat:nth-child(2){
+.row:last-child .seat:nth-child(2) {
   margin-right: 0;
 }
 /* Seat Styles */
 .seat {
-    width: 40px;
-    height: 40px;
-    border: 1px solid var(--text-color);
-    border-radius: 5px;
-    cursor: pointer;
-    position: relative;
-    transition: all 0.25s ease;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--text-color);
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.25s ease;
 }
-.seat::after{
+.seat::after {
   transition: all 0.25s ease;
   position: absolute;
   z-index: -1;
@@ -123,58 +127,58 @@ h1{
   left: 50%;
   transform: translateX(-50%);
   bottom: 0;
-  content: '';
+  content: "";
   height: 120%;
   width: 60%;
   border-radius: 5px;
   cursor: pointer;
 }
-.seat.available::after{
-  background-color: #8A8A94;
+.seat.available::after {
+  background-color: #8a8a94;
 }
-.seat.booked::after{
+.seat.booked::after {
   background-color: var(--reject-color);
 }
-.seat.selected::after{
+.seat.selected::after {
   background-color: var(--accept-color);
 }
 .seat.booked {
-    background-color: var(--reject-color);
-    cursor: not-allowed;
+  background-color: var(--reject-color);
+  cursor: not-allowed;
 }
 
 .seat.available {
-    background-color: #8A8A94;
+  background-color: #8a8a94;
 }
 
 .seat.selected {
-    background-color: var(--accept-color);
+  background-color: var(--accept-color);
 }
 
-.book{
-    position: relative;
-    width: 100%;
-    height: auto;
+.book {
+  position: relative;
+  width: 100%;
+  height: auto;
 }
-#book-btn{
-    margin-top: 10px;
-    padding: 15px 20px;
-    background-color: var(--button-color);
-    border: 1px solid var(--text-color);
-    border-radius: 15px;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    cursor: pointer;
+#book-btn {
+  margin-top: 10px;
+  padding: 15px 20px;
+  background-color: var(--button-color);
+  border: 1px solid var(--text-color);
+  border-radius: 15px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
 }
 
-@media only screen and (max-width : 450px){
-  .link-container a{
+@media only screen and (max-width: 450px) {
+  .link-container a {
     font-size: 1rem;
   }
-} 
-@media only screen and (max-width : 360px){
-  nav a{
+}
+@media only screen and (max-width: 360px) {
+  nav a {
     font-size: 1rem;
   }
 }

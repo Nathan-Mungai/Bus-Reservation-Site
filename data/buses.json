@@ -9,43 +9,12 @@
     "to": "Mombasa",
     "layout": "layout-2-2",
     "seats": [
-      [
-        true,
-        true,
-        true,
-        true
-      ],
-      [
-        false,
-        true,
-        false,
-        false
-      ],
-      [
-        false,
-        false,
-        true,
-        false
-      ],
-      [
-        false,
-        true,
-        false,
-        false
-      ],
-      [
-        false,
-        true,
-        true,
-        false
-      ],
-      [
-        false,
-        false,
-        false,
-        false,
-        true
-      ]
+      [true, true, true, true],
+      [false, true, false, false],
+      [false, false, true, false],
+      [false, true, false, false],
+      [false, true, true, false],
+      [false, false, false, false, true]
     ]
   },
   {
@@ -58,43 +27,12 @@
     "to": "Nairobi",
     "layout": "layout-2-2",
     "seats": [
-      [
-        false,
-        false,
-        false,
-        false
-      ],
-      [
-        true,
-        false,
-        false,
-        false
-      ],
-      [
-        false,
-        false,
-        true,
-        false
-      ],
-      [
-        false,
-        false,
-        false,
-        false
-      ],
-      [
-        false,
-        false,
-        false,
-        false
-      ],
-      [
-        true,
-        true,
-        true,
-        true,
-        true
-      ]
+      [false, false, false, false],
+      [true, false, false, false],
+      [false, false, true, false],
+      [false, false, false, false],
+      [false, false, false, false],
+      [true, true, true, true, true]
     ]
   },
   {
@@ -107,43 +45,12 @@
     "to": "Mombasa",
     "layout": "layout-2-2",
     "seats": [
-      [
-        true,
-        false,
-        false,
-        true
-      ],
-      [
-        true,
-        true,
-        false,
-        false
-      ],
-      [
-        false,
-        true,
-        true,
-        false
-      ],
-      [
-        false,
-        true,
-        false,
-        false
-      ],
-      [
-        true,
-        false,
-        false,
-        false
-      ],
-      [
-        false,
-        false,
-        true,
-        true,
-        false
-      ]
+      [true, false, false, true],
+      [true, true, false, false],
+      [false, true, true, false],
+      [false, true, false, false],
+      [true, false, false, false],
+      [false, false, true, true, false]
     ]
   },
   {
@@ -156,43 +63,12 @@
     "to": "Eldoret",
     "layout": "layout-2-2",
     "seats": [
-      [
-        true,
-        true,
-        true,
-        true
-      ],
-      [
-        true,
-        true,
-        true,
-        true
-      ],
-      [
-        true,
-        true,
-        false,
-        false
-      ],
-      [
-        true,
-        true,
-        true,
-        false
-      ],
-      [
-        true,
-        true,
-        true,
-        true
-      ],
-      [
-        true,
-        true,
-        true,
-        false,
-        true
-      ]
+      [true, true, true, true],
+      [true, true, true, true],
+      [true, true, false, false],
+      [true, true, true, false],
+      [true, true, true, true],
+      [true, true, true, false, true]
     ]
   },
   {
@@ -205,43 +81,12 @@
     "to": "Mombasa",
     "layout": "layout-2-2",
     "seats": [
-      [
-        false,
-        false,
-        true,
-        true
-      ],
-      [
-        false,
-        false,
-        false,
-        false
-      ],
-      [
-        false,
-        false,
-        false,
-        false
-      ],
-      [
-        false,
-        false,
-        false,
-        false
-      ],
-      [
-        false,
-        false,
-        false,
-        false
-      ],
-      [
-        false,
-        false,
-        false,
-        true,
-        true
-      ]
+      [false, false, true, true],
+      [false, false, false, false],
+      [false, false, false, false],
+      [false, false, false, false],
+      [false, false, false, false],
+      [false, false, false, true, true]
     ]
   },
   {
@@ -254,49 +99,12 @@
     "to": "Mombasa",
     "layout": "layout-3-2",
     "seats": [
-      [
-        false,
-        false,
-        true,
-        true,
-        false
-      ],
-      [
-        false,
-        true,
-        false,
-        false,
-        false
-      ],
-      [
-        false,
-        false,
-        false,
-        false,
-        false
-      ],
-      [
-        false,
-        false,
-        false,
-        false,
-        false
-      ],
-      [
-        false,
-        false,
-        false,
-        false,
-        false
-      ],
-      [
-        false,
-        false,
-        true,
-        false,
-        true,
-        true
-      ]
+      [false, false, true, true, false],
+      [false, true, false, false, false],
+      [false, false, false, false, false],
+      [false, false, false, false, false],
+      [false, false, false, false, false],
+      [false, false, true, false, true, true]
     ]
   },
   {
@@ -309,43 +117,12 @@
     "to": "Nairobi",
     "layout": "layout-2-2",
     "seats": [
-      [
-        true,
-        false,
-        false,
-        true
-      ],
-      [
-        false,
-        true,
-        true,
-        false
-      ],
-      [
-        false,
-        true,
-        false,
-        false
-      ],
-      [
-        false,
-        false,
-        true,
-        false
-      ],
-      [
-        false,
-        false,
-        false,
-        false
-      ],
-      [
-        true,
-        false,
-        false,
-        true,
-        true
-      ]
+      [true, false, false, true],
+      [false, true, true, false],
+      [false, true, false, false],
+      [false, false, true, false],
+      [false, false, false, false],
+      [true, false, false, true, true]
     ]
   },
   {
@@ -358,49 +135,12 @@
     "to": "Nairobi",
     "layout": "layout-3-2",
     "seats": [
-      [
-        false,
-        true,
-        false,
-        false,
-        true
-      ],
-      [
-        false,
-        true,
-        false,
-        false,
-        false
-      ],
-      [
-        false,
-        false,
-        true,
-        false,
-        false
-      ],
-      [
-        false,
-        true,
-        false,
-        false,
-        false
-      ],
-      [
-        false,
-        false,
-        false,
-        false,
-        false
-      ],
-      [
-        true,
-        true,
-        true,
-        false,
-        true,
-        false
-      ]
+      [false, true, false, false, true],
+      [false, true, false, false, false],
+      [false, false, true, false, false],
+      [false, true, false, false, false],
+      [false, false, false, false, false],
+      [true, true, true, false, true, false]
     ]
   },
   {
@@ -413,49 +153,12 @@
     "to": "Busia",
     "layout": "layout-3-2",
     "seats": [
-      [
-        true,
-        true,
-        true,
-        false,
-        true
-      ],
-      [
-        false,
-        false,
-        true,
-        false,
-        false
-      ],
-      [
-        false,
-        true,
-        true,
-        false,
-        false
-      ],
-      [
-        true,
-        true,
-        false,
-        false,
-        true
-      ],
-      [
-        false,
-        true,
-        false,
-        true,
-        false
-      ],
-      [
-        true,
-        false,
-        true,
-        true,
-        true,
-        false
-      ]
+      [true, true, true, false, true],
+      [false, false, true, false, false],
+      [false, true, true, false, false],
+      [true, true, false, false, true],
+      [false, true, false, true, false],
+      [true, false, true, true, true, false]
     ]
   },
   {
@@ -468,43 +171,12 @@
     "to": "Mombasa",
     "layout": "layout-2-2",
     "seats": [
-      [
-        true,
-        true,
-        false,
-        true
-      ],
-      [
-        false,
-        false,
-        true,
-        false
-      ],
-      [
-        true,
-        true,
-        true,
-        false
-      ],
-      [
-        false,
-        true,
-        true,
-        true
-      ],
-      [
-        true,
-        false,
-        false,
-        true
-      ],
-      [
-        false,
-        false,
-        true,
-        true,
-        true
-      ]
+      [true, true, false, true],
+      [false, false, true, false],
+      [true, true, true, false],
+      [false, true, true, true],
+      [true, false, false, true],
+      [false, false, true, true, true]
     ]
   },
   {
@@ -517,49 +189,12 @@
     "to": "Mumias",
     "layout": "layout-3-2",
     "seats": [
-      [
-        false,
-        true,
-        true,
-        false,
-        false
-      ],
-      [
-        false,
-        false,
-        false,
-        true,
-        true
-      ],
-      [
-        true,
-        false,
-        true,
-        false,
-        false
-      ],
-      [
-        true,
-        true,
-        false,
-        true,
-        false
-      ],
-      [
-        true,
-        false,
-        false,
-        false,
-        false
-      ],
-      [
-        false,
-        true,
-        true,
-        false,
-        true,
-        false
-      ]
+      [false, true, true, false, false],
+      [false, false, false, true, true],
+      [true, false, true, false, false],
+      [true, true, false, true, false],
+      [true, false, false, false, false],
+      [false, true, true, false, true, false]
     ]
   },
   {
@@ -572,43 +207,12 @@
     "to": "Kisumu",
     "layout": "layout-2-2",
     "seats": [
-      [
-        true,
-        false,
-        true,
-        false
-      ],
-      [
-        false,
-        true,
-        false,
-        true
-      ],
-      [
-        true,
-        true,
-        false,
-        false
-      ],
-      [
-        false,
-        false,
-        true,
-        false
-      ],
-      [
-        false,
-        true,
-        true,
-        true
-      ],
-      [
-        true,
-        true,
-        true,
-        true,
-        false
-      ]
+      [true, false, true, false],
+      [false, true, false, true],
+      [true, true, false, false],
+      [false, false, true, false],
+      [false, true, true, true],
+      [true, true, true, true, false]
     ]
   },
   {
@@ -621,43 +225,12 @@
     "to": "Nakuru",
     "layout": "layout-2-2",
     "seats": [
-      [
-        true,
-        true,
-        false,
-        true
-      ],
-      [
-        false,
-        false,
-        true,
-        false
-      ],
-      [
-        false,
-        true,
-        true,
-        false
-      ],
-      [
-        true,
-        false,
-        true,
-        false
-      ],
-      [
-        false,
-        false,
-        true,
-        false
-      ],
-      [
-        true,
-        true,
-        true,
-        true,
-        true
-      ]
+      [true, true, false, true],
+      [false, false, true, false],
+      [false, true, true, false],
+      [true, false, true, false],
+      [false, false, true, false],
+      [true, true, true, true, true]
     ]
   },
   {
@@ -670,49 +243,12 @@
     "to": "Nairobi",
     "layout": "layout-3-2",
     "seats": [
-      [
-        true,
-        true,
-        true,
-        false,
-        true
-      ],
-      [
-        false,
-        true,
-        false,
-        true,
-        false
-      ],
-      [
-        false,
-        false,
-        true,
-        false,
-        false
-      ],
-      [
-        true,
-        true,
-        false,
-        false,
-        true
-      ],
-      [
-        false,
-        false,
-        true,
-        false,
-        false
-      ],
-      [
-        true,
-        false,
-        false,
-        true,
-        false,
-        true
-      ]
+      [true, true, true, false, true],
+      [false, true, false, true, false],
+      [false, false, true, false, false],
+      [true, true, false, false, true],
+      [false, false, true, false, false],
+      [true, false, false, true, false, true]
     ]
   },
   {
@@ -725,43 +261,12 @@
     "to": "Nairobi",
     "layout": "layout-2-2",
     "seats": [
-      [
-        true,
-        true,
-        true,
-        false
-      ],
-      [
-        false,
-        true,
-        false,
-        false
-      ],
-      [
-        true,
-        true,
-        false,
-        false
-      ],
-      [
-        false,
-        false,
-        true,
-        true
-      ],
-      [
-        false,
-        false,
-        false,
-        true
-      ],
-      [
-        true,
-        false,
-        false,
-        true,
-        true
-      ]
+      [true, true, true, false],
+      [false, true, false, false],
+      [true, true, false, false],
+      [false, false, true, true],
+      [false, false, false, true],
+      [true, false, false, true, true]
     ]
   },
   {
@@ -774,49 +279,12 @@
     "to": "Mombasa",
     "layout": "layout-3-2",
     "seats": [
-      [
-        false,
-        true,
-        false,
-        true,
-        true
-      ],
-      [
-        false,
-        false,
-        true,
-        false,
-        true
-      ],
-      [
-        true,
-        true,
-        false,
-        false,
-        false
-      ],
-      [
-        true,
-        false,
-        true,
-        false,
-        true
-      ],
-      [
-        false,
-        true,
-        true,
-        false,
-        false
-      ],
-      [
-        false,
-        false,
-        false,
-        true,
-        true,
-        false
-      ]
+      [false, true, false, true, true],
+      [false, false, true, false, true],
+      [true, true, false, false, false],
+      [true, false, true, false, true],
+      [false, true, true, false, false],
+      [false, false, false, true, true, false]
     ]
   },
   {
@@ -829,49 +297,12 @@
     "to": "Mombasa",
     "layout": "layout-3-2",
     "seats": [
-      [
-        true,
-        true,
-        true,
-        false,
-        true
-      ],
-      [
-        false,
-        false,
-        false,
-        true,
-        false
-      ],
-      [
-        false,
-        true,
-        false,
-        false,
-        true
-      ],
-      [
-        true,
-        true,
-        false,
-        false,
-        false
-      ],
-      [
-        true,
-        false,
-        true,
-        false,
-        true
-      ],
-      [
-        false,
-        false,
-        false,
-        true,
-        true,
-        true
-      ]
+      [true, true, true, false, true],
+      [false, false, false, true, false],
+      [false, true, false, false, true],
+      [true, true, false, false, false],
+      [true, false, true, false, true],
+      [false, false, false, true, true, true]
     ]
   },
   {
@@ -884,43 +315,12 @@
     "to": "Mombasa",
     "layout": "layout-2-2",
     "seats": [
-      [
-        true,
-        false,
-        false,
-        true
-      ],
-      [
-        false,
-        true,
-        true,
-        false
-      ],
-      [
-        false,
-        true,
-        false,
-        false
-      ],
-      [
-        false,
-        false,
-        true,
-        false
-      ],
-      [
-        true,
-        true,
-        true,
-        true
-      ],
-      [
-        true,
-        false,
-        false,
-        true,
-        false
-      ]
+      [true, false, false, true],
+      [false, true, true, false],
+      [false, true, false, false],
+      [false, false, true, false],
+      [true, true, true, true],
+      [true, false, false, true, false]
     ]
   },
   {
@@ -933,49 +333,12 @@
     "to": "Eldoret",
     "layout": "layout-3-2",
     "seats": [
-      [
-        true,
-        true,
-        false,
-        false,
-        true
-      ],
-      [
-        false,
-        false,
-        false,
-        true,
-        false
-      ],
-      [
-        true,
-        false,
-        true,
-        false,
-        false
-      ],
-      [
-        false,
-        true,
-        false,
-        true,
-        true
-      ],
-      [
-        true,
-        true,
-        false,
-        false,
-        false
-      ],
-      [
-        false,
-        true,
-        true,
-        true,
-        false,
-        true
-      ]
+      [true, true, false, false, true],
+      [false, false, false, true, false],
+      [true, false, true, false, false],
+      [false, true, false, true, true],
+      [true, true, false, false, false],
+      [false, true, true, true, false, true]
     ]
   },
   {
@@ -988,43 +351,12 @@
     "to": "Mombasa",
     "layout": "layout-2-2",
     "seats": [
-      [
-        true,
-        false,
-        true,
-        false
-      ],
-      [
-        false,
-        true,
-        false,
-        true
-      ],
-      [
-        false,
-        false,
-        true,
-        true
-      ],
-      [
-        true,
-        true,
-        false,
-        false
-      ],
-      [
-        false,
-        true,
-        true,
-        false
-      ],
-      [
-        true,
-        false,
-        false,
-        true,
-        false
-      ]
+      [true, false, true, false],
+      [false, true, false, true],
+      [false, false, true, true],
+      [true, true, false, false],
+      [false, true, true, false],
+      [true, false, false, true, false]
     ]
   },
   {
@@ -1037,43 +369,12 @@
     "to": "Kisumu",
     "layout": "layout-2-2",
     "seats": [
-      [
-        true,
-        true,
-        false,
-        true
-      ],
-      [
-        false,
-        false,
-        true,
-        true
-      ],
-      [
-        true,
-        true,
-        false,
-        false
-      ],
-      [
-        true,
-        true,
-        true,
-        false
-      ],
-      [
-        true,
-        false,
-        false,
-        false
-      ],
-      [
-        true,
-        true,
-        true,
-        false,
-        false
-      ]
+      [true, true, false, true],
+      [false, false, true, true],
+      [true, true, false, false],
+      [true, true, true, false],
+      [true, false, false, false],
+      [true, true, true, false, false]
     ]
   },
   {
@@ -1086,49 +387,12 @@
     "to": "Kisumu",
     "layout": "layout-3-2",
     "seats": [
-      [
-        false,
-        false,
-        true,
-        true,
-        false
-      ],
-      [
-        false,
-        true,
-        false,
-        false,
-        false
-      ],
-      [
-        true,
-        false,
-        false,
-        true,
-        true
-      ],
-      [
-        false,
-        false,
-        true,
-        false,
-        false
-      ],
-      [
-        false,
-        true,
-        true,
-        true,
-        false
-      ],
-      [
-        false,
-        true,
-        false,
-        true,
-        true,
-        true
-      ]
+      [false, false, true, true, false],
+      [false, true, false, false, false],
+      [true, false, false, true, true],
+      [false, false, true, false, false],
+      [false, true, true, true, false],
+      [false, true, false, true, true, true]
     ]
   },
   {
@@ -1141,49 +405,300 @@
     "to": "Kisumu",
     "layout": "layout-3-2",
     "seats": [
-      [
-        true,
-        true,
-        false,
-        true,
-        false
-      ],
-      [
-        false,
-        true,
-        true,
-        false,
-        true
-      ],
-      [
-        false,
-        true,
-        false,
-        true,
-        true
-      ],
-      [
-        true,
-        true,
-        true,
-        false,
-        true
-      ],
-      [
-        false,
-        false,
-        true,
-        false,
-        true
-      ],
-      [
-        true,
-        false,
-        true,
-        true,
-        false,
-        false
-      ]
+      [true, true, false, true, false],
+      [false, true, true, false, true],
+      [false, true, false, true, true],
+      [true, true, true, false, true],
+      [false, false, true, false, true],
+      [true, false, true, true, false, false]
+    ]
+  },
+  {
+    "id": 24,
+    "name": "Smartcoach",
+    "departure": "6:30 am",
+    "arrival": "10:00 am",
+    "price": "Ksh. 1200",
+    "from": "Thika",
+    "to": "Nakuru",
+    "layout": "layout-2-2",
+    "seats": [
+      [false, false, false, false],
+      [true, true, false, false],
+      [true, false, false, false],
+      [false, false, false, true],
+      [true, true, true, false],
+      [false, false, true, true, false]
+    ]
+  },
+  {
+    "id": 25,
+    "name": "Smartcoach",
+    "departure": "2:30 pm",
+    "arrival": "6:00 pm",
+    "price": "Ksh. 1200",
+    "from": "Nakuru",
+    "to": "Thika",
+    "layout": "layout-2-2",
+    "seats": [
+      [false, true, true, false],
+      [false, false, false, false],
+      [false, true, false, true],
+      [false, false, false, false],
+      [true, true, false, false],
+      [false, true, false, true, false]
+    ]
+  },
+  {
+    "id": 26,
+    "name": "Mash Poa",
+    "departure": "8:00 am",
+    "arrival": "1:30 pm",
+    "price": "Ksh. 1500",
+    "from": "Nakuru",
+    "to": "Mumias",
+    "layout": "layout-3-2",
+    "seats": [
+      [true, false, false, true, true],
+      [false, false, false, false, false],
+      [false, false, true, false, true],
+      [true, false, false, true, false],
+      [false, true, false, false, false],
+      [false, false, false, true, false, false]
+    ]
+  },
+  {
+    "id": 27,
+    "name": "Mash Poa",
+    "departure": "3:30 pm",
+    "arrival": "9:00 pm",
+    "price": "Ksh. 1500",
+    "from": "Mumias",
+    "to": "Nakuru",
+    "layout": "layout-3-2",
+    "seats": [
+      [false, true, true, false, false],
+      [false, false, false, false, true],
+      [false, false, true, false, false],
+      [true, true, false, true, false],
+      [false, false, true, false, true],
+      [true, false, false, true, false, false]
+    ]
+  },
+  {
+    "id": 28,
+    "name": "Greenline",
+    "departure": "7:00 am",
+    "arrival": "8:30 am",
+    "price": "Ksh. 700",
+    "from": "Mumias",
+    "to": "Eldoret",
+    "layout": "layout-2-2",
+    "seats": [
+      [false, true, true, false],
+      [true, false, false, true],
+      [false, true, false, false],
+      [true, false, true, false],
+      [false, false, false, true],
+      [false, true, true, true, false]
+    ]
+  },
+  {
+    "id": 29,
+    "name": "Greenline",
+    "departure": "5:00 pm",
+    "arrival": "6:30 pm",
+    "price": "Ksh. 700",
+    "from": "Eldoret",
+    "to": "Mumias",
+    "layout": "layout-2-2",
+    "seats": [
+      [true, false, false, true],
+      [false, false, true, true],
+      [true, false, false, true],
+      [false, true, false, true],
+      [false, false, false, false],
+      [true, false, false, true, false]
+    ]
+  },
+  {
+    "id": 30,
+    "name": "Impala",
+    "departure": "9:30 am",
+    "arrival": "10:00 am",
+    "price": "Ksh. 400",
+    "from": "Thika",
+    "to": "Kitengela",
+    "layout": "layout-2-2",
+    "seats": [
+      [false, true, false, true],
+      [true, true, false, false],
+      [true, true, true, false],
+      [false, true, true, false],
+      [false, false, false, true],
+      [true, true, true, true, false]
+    ]
+  },
+  {
+    "id": 31,
+    "name": "Impala",
+    "departure": "1:30 pm",
+    "arrival": "2:00 pm",
+    "price": "Ksh. 400",
+    "from": "Kitengela",
+    "to": "Thika",
+    "layout": "layout-2-2",
+    "seats": [
+      [false, true, false, false],
+      [true, false, false, true],
+      [true, false, true, false],
+      [false, true, true, false],
+      [false, true, false, false],
+      [false, false, false, true, false]
+    ]
+  },
+  {
+    "id": 32,
+    "name": "Climax",
+    "departure": "5:30 am",
+    "arrival": "11:30 am",
+    "price": "Ksh. 2200",
+    "from": "Thika",
+    "to": "Mombasa",
+    "layout": "layout-3-2",
+    "seats": [
+      [false, true, true, false, false],
+      [false, false, false, false, false],
+      [false, true, false, true, false],
+      [true, false, false, true, false],
+      [false, true, true, false, false],
+      [false, false, false, true, false, true]
+    ]
+  },
+  {
+    "id": 33,
+    "name": "Climax",
+    "departure": "3:00 pm",
+    "arrival": "9:00 pm",
+    "price": "Ksh. 2200",
+    "from": "Mombasa",
+    "to": "Thika",
+    "layout": "layout-3-2",
+    "seats": [
+      [false, false, true, false, true],
+      [false, true, false, false, false],
+      [false, false, true, true, false],
+      [false, true, false, false, true],
+      [true, false, false, true, false],
+      [false, false, true, true, false, false]
+    ]
+  },
+  {
+    "id": 34,
+    "name": "Easy Coach",
+    "departure": "6:30 am",
+    "arrival": "7:00 am",
+    "price": "Ksh. 300",
+    "from": "Busia",
+    "to": "Mumias",
+    "layout": "layout-2-2",
+    "seats": [
+      [true, false, false, true],
+      [false, false, false, true],
+      [true, false, true, false],
+      [false, false, false, true],
+      [true, true, false, false],
+      [false, true, false, false, false]
+    ]
+  },
+  {
+    "id": 35,
+    "name": "Easy Coach",
+    "departure": "4:30 pm",
+    "arrival": "5:00 pm",
+    "price": "Ksh. 300",
+    "from": "Mumias",
+    "to": "Busia",
+    "layout": "layout-2-2",
+    "seats": [
+      [false, true, false, true],
+      [false, false, true, false],
+      [false, true, false, false],
+      [false, false, true, false],
+      [false, true, false, true],
+      [true, false, false, false, false]
+    ]
+  },
+  {
+    "id": 36,
+    "name": "Taran",
+    "departure": "9:00 am",
+    "arrival": "1:00 pm",
+    "price": "Ksh. 1400",
+    "from": "Kisumu",
+    "to": "Nakuru",
+    "layout": "layout-3-2",
+    "seats": [
+      [false, true, false, false, true],
+      [true, false, true, false, false],
+      [false, true, false, true, false],
+      [true, false, true, true, false],
+      [false, false, false, false, true],
+      [true, false, true, false, true, true]
+    ]
+  },
+  {
+    "id": 37,
+    "name": "Taran",
+    "departure": "4:30 pm",
+    "arrival": "8:30 pm",
+    "price": "Ksh. 1400",
+    "from": "Nakuru",
+    "to": "Kisumu",
+    "layout": "layout-3-2",
+    "seats": [
+      [true, false, false, true, false],
+      [false, true, false, true, false],
+      [true, false, true, false, true],
+      [false, false, true, false, false],
+      [true, true, false, false, true],
+      [false, false, false, true, true, false]
+    ]
+  },
+  {
+    "id": 38,
+    "name": "Impala",
+    "departure": "6:00 am",
+    "arrival": "7:30 am",
+    "price": "Ksh. 700",
+    "from": "Kisumu",
+    "to": "Eldoret",
+    "layout": "layout-2-2",
+    "seats": [
+      [false, false, true, true],
+      [true, false, false, false],
+      [false, true, true, false],
+      [false, true, false, false],
+      [true, false, true, false],
+      [false, false, false, true, false]
+    ]
+  },
+  {
+    "id": 39,
+    "name": "Impala",
+    "departure": "2:30 pm",
+    "arrival": "4:00 pm",
+    "price": "Ksh. 700",
+    "from": "Eldoret",
+    "to": "Kisumu",
+    "layout": "layout-2-2",
+    "seats": [
+      [true, false, true, false],
+      [false, false, false, true],
+      [false, true, true, false],
+      [false, true, false, false],
+      [false, true, true, false],
+      [true, false, false, true, false]
     ]
   }
 ]

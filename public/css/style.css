@@ -2,31 +2,30 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   text-decoration: none;
   color: var(--text-color);
 }
-body{
+body {
   background-color: var(--background-color);
 }
-:root{
-  --primary-color:#D32F2F;
-  --background-color:#2A2A2A ;
-  --secondary-color:#FFEB3B;
-  --tertiary-color:#FF9800;
-  --text-color:#E0E0E0;
-  --shadow-color:#333333;
-  --button-color:#FF5722;
+:root {
+  --primary-color: #d32f2f;
+  --background-color: #2a2a2a;
+  --secondary-color: #ffeb3b;
+  --tertiary-color: #ff9800;
+  --text-color: #e0e0e0;
+  --shadow-color: #333333;
+  --button-color: #ff5722;
 }
-.light{
-  --primary-color:#F44336;
-  --background-color:#FFF3E0 ;
-  --secondary-color:#FFEB3B;
-  --tertiary-color:#FF9800;
-  --text-color:#212121;
-  --shadow-color:#333333;
-  --button-color:#FF5722;
-
+.light {
+  --primary-color: #d32f2f;
+  --background-color: #fff3e0;
+  --secondary-color: #ffeb3b;
+  --tertiary-color: #ff9800;
+  --text-color: #212121;
+  --shadow-color: #333333;
+  --button-color: #ff5722;
 }
 /*navbar*/
 
@@ -46,43 +45,75 @@ nav a {
   font-weight: bold;
 }
 
-.link-container{
+.link-container {
   list-style: none;
   gap: 10px;
   display: flex;
   align-items: center;
 }
-.link-container a{
+.link-container a {
   margin-right: 20px;
+  transition: color 0.5s ease-in-out, padding 0.4s ease-in-out,
+    background-color 0.4s ease-in-out, border-radius 0.4s ease-in-out;
 }
-.link-container a:hover{
-  color: var(--secondary-color);
+.link-container a:hover {
+  color: var(--button-color);
+  padding: 4px 8px;
+  border-radius: 25px;
+  background-color: var(--secondary-color);
 }
 
+.hero {
+  height: calc(100vh - 50px);
+  position: relative;
+  overflow: hidden;
+}
+.hero img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+}
+.hero::after {
+  position: absolute;
+  content: " ";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  filter: blur(35px);
+  z-index: 1;
+}
 /*search*/
-.search-container{
+.search-container {
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(50%);
   margin: 15px auto;
-  width:fit-content ;
+  width: fit-content;
   background-color: var(--primary-color);
   padding: 20px 20px;
   border-radius: 20px;
   margin-bottom: 50px;
 }
-.search-container form{
+.search-container form {
   display: flex;
   gap: 10px;
   flex-wrap: wrap;
   justify-content: center;
 }
-.form-section{
+.form-section {
   display: flex;
   gap: 10px;
 }
-.form-section label{
+.form-section label {
   font-size: 1.2rem;
   color: var(--background-color);
 }
-.form-section input{
+.form-section input {
   color: black;
   border-radius: 10px;
   font-size: 1.1rem;
@@ -93,7 +124,7 @@ nav a {
   overflow-y: auto;
 }
 
-.search-container form button{
+.search-container form button {
   background-color: var(--secondary-color);
   color: black;
   padding: 2px 40px;
@@ -101,24 +132,24 @@ nav a {
   border: 1px solid var(--shadow-color);
   transition: scale 0.3s ease, border 0.1s ease;
 }
-.search-container form button:hover{
+.search-container form button:hover {
   border: 2px solid var(--shadow-color);
   cursor: pointer;
   scale: 1.05;
 }
 /*benefits and partners*/
-.benefits{
+.benefits {
   display: flex;
   justify-content: center;
   gap: 10px;
   margin: 0 10px;
   flex-wrap: wrap;
 }
-body h3{
+body h3 {
   text-align: center;
   font-size: 2rem;
 }
-.benefits-card{
+.benefits-card {
   border: 1px solid var(--text-color);
   border-radius: 20px;
   padding: 5px 10px 50px 10px;
@@ -130,105 +161,105 @@ body h3{
   background-color: var(--primary-color);
   color: var(--background-color);
 }
-.benefits-card svg{
+.benefits-card svg {
   align-self: center;
   fill: var(--background-color);
   height: 80px;
   width: auto;
 }
-.benefits-card h3{
-  font-size:0.9rem ;
+.benefits-card h3 {
+  font-size: 0.9rem;
   letter-spacing: 2px;
 }
-.benefits-card p{
+.benefits-card p {
   font-size: 0.75rem;
 }
 
-
-.partners{
+.partners {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
 }
-.partners h3{
+.partners h3 {
   align-self: center;
   font-size: 2rem;
 }
-.partners p{
+.partners p {
   align-self: center;
   font-size: 1.25rem;
 }
 /* marquee css */
-.item{
+.item {
   height: 100px;
   width: 160px;
   border-radius: 10px;
   position: absolute;
-  left: max((150px * 7), 100%) ;
+  left: max((150px * 7), 100%);
   animation-name: scrollleft;
   animation-duration: 25s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
-.item img{
+.item img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 10px;
 }
-.item4 img{
+.item4 img {
   height: 100%;
   width: auto;
 }
 @keyframes scrollleft {
-  to{
-      left:-150px;
+  to {
+    left: -150px;
   }
-  
 }
-.wrapper{
+.wrapper {
   position: relative;
   height: 100px;
   margin: 50px 20px;
   overflow: hidden;
-  mask-image: linear-gradient(to right,
-  rgba(0,0,0,0),
-  rgba(0,0,0,1) 20%,
-  rgba(0,0,0,1) 80%,
-  rgba(0,0,0,0));
+  mask-image: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 1) 20%,
+    rgba(0, 0, 0, 1) 80%,
+    rgba(0, 0, 0, 0)
+  );
 }
-.item1{
-  animation-delay:calc(25s / 7 * (7 - 1) * -1) ;
-  background-color:red;
+.item1 {
+  animation-delay: calc(25s / 7 * (7 - 1) * -1);
+  background-color: red;
 }
-.item2{
-  animation-delay:calc(25s / 7 * (7 - 2) * -1) ;
-  background-color:orange;
+.item2 {
+  animation-delay: calc(25s / 7 * (7 - 2) * -1);
+  background-color: orange;
 }
-.item3{
-  animation-delay:calc(25s / 7 * (7 - 3) * -1) ;
-  background-color:yellow;
+.item3 {
+  animation-delay: calc(25s / 7 * (7 - 3) * -1);
+  background-color: yellow;
 }
-.item4{
-  animation-delay:calc(25s / 7 * (7 - 4) * -1) ;
-  background-color:green;
+.item4 {
+  animation-delay: calc(25s / 7 * (7 - 4) * -1);
+  background-color: green;
 }
-.item5{
-  animation-delay:calc(25s / 7 * (7 - 5) * -1) ;
-  background-color:blue;
+.item5 {
+  animation-delay: calc(25s / 7 * (7 - 5) * -1);
+  background-color: blue;
 }
-.item6{
-  animation-delay:calc(25s / 7 * (7 - 6) * -1) ;
-  background-color:indigo;
+.item6 {
+  animation-delay: calc(25s / 7 * (7 - 6) * -1);
+  background-color: indigo;
 }
-.item7{
-  animation-delay:calc(25s / 7 * (7 - 7) * -1) ;
-  background-color:violet;
+.item7 {
+  animation-delay: calc(25s / 7 * (7 - 7) * -1);
+  background-color: violet;
 }
 /*marquee css ends*/
 
 /*footer*/
-.footer{
+.footer {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
@@ -237,30 +268,30 @@ body h3{
   background-color: var(--primary-color);
   font-weight: bold;
 }
-.footer a{
+.footer a {
   font-weight: bold;
   color: var(--text-color);
 }
-.footer a:hover{
+.footer a:hover {
   color: var(--tertiary-color);
   transform: translateY(-2px);
-  text-shadow: 0.5px 0 0.5px var(--text-color);
+  text-shadow: 0.5px 0 0.5px black;
 }
-.socials{
+.socials {
   margin-top: 20px;
   margin-left: 50px;
   margin-right: auto;
 }
-.socials svg{
+.socials svg {
   fill: var(--tertiary-color);
   transition: all 0.5s ease-in-out;
 }
-.socials svg:hover{
+.socials svg:hover {
   fill: var(--secondary-color);
   transform: translateY(-3px);
   scale: 1.1;
 }
-.footer-container{
+.footer-container {
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -268,35 +299,50 @@ body h3{
   margin-top: 20px;
 }
 
-@media only screen and (max-width : 800px) {
-  .benefits{
+@media only screen and (max-width: 800px) {
+  .benefits {
     flex-direction: column;
     align-items: center;
   }
-  .benefits-card{
+  .benefits-card {
     width: 50%;
   }
-  
+  .footer a,
+  .footer p {
+    font-size: 0.7rem;
+  }
+
+  #theme-toggle {
+    font-size: 0.65rem;
+  }
+  .socials {
+    margin-left: 10px;
+  }
 }
-@media only screen and (max-width : 450px){
-  .link-container a{
+@media only screen and (max-width: 450px) {
+  .link-container a {
     font-size: 1rem;
   }
-} 
-@media only screen and (max-width : 360px){
-  nav a{
+}
+@media only screen and (max-width: 360px) {
+  nav a {
     font-size: 1rem;
   }
 }
-#theme-toggle{
-  border: 2px inset black;
-  padding: 5px;
-  background-color: var(--secondary-color);
+#theme-toggle {
+  margin-top: 30px;
+  color: var(--secondary-color);
+  transition: all 0.3s ease-in;
+  background-color: var(--primary-color);
+  border: 0;
+  font-weight: bold;
+  padding: 3px;
   border-radius: 10px;
-  color: black;
-  transition: all 0.5s linear;
+  cursor: pointer;
 }
-#theme-toggle:hover{
-  background-color: var(--tertiary-color);
-  scale: 1.075;
+#theme-toggle:hover {
+  background-color: var(--button-color);
+  scale: 1.01;
+  border: 1px solid black;
+  color: black;
 }
