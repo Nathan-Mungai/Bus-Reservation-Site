@@ -19,9 +19,7 @@
     </nav>
 
     <h1>Choose a seat on {{bus.name}} from {{bus.from}} to {{bus.to}}</h1>
-    {{!-- <div class="wheel-icon">
-    <svg xmlns="http://www.w3.org/2000/svg" height="40px" viewBox="0 -960 960 960" width="40px" fill="#e8eaed"><path d="M480-80q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm-40-84v-120q-60-12-102-54t-54-102H164q12 109 89.5 185T440-164Zm80 0q109-12 186.5-89.5T796-440H676q-12 60-54 102t-102 54v120ZM164-520h116l120-120h160l120 120h116q-15-121-105-200.5T480-800q-121 0-211 79.5T164-520Z"/></svg>
-    </div> --}}
+
     <div class="seats">
         <!-- Loop through each row of seats in the bus -->
         {{#each bus.seats}}
@@ -30,6 +28,8 @@
                 {{#each this}}
                     <button 
                         class="seat {{#if this}}booked{{else}}available{{/if}}" 
+                        data-row="{{@../index}}" 
+                        data-col="{{@index}}" 
                         {{#if this}}disabled{{/if}}>
                     </button>
                 {{/each}}
@@ -37,13 +37,62 @@
         {{/each}}
     </div>
 
-    <div class="book">
-
-    <button id="book-btn">Book this seat</button>
-    
+    <!-- Booking Form -->
+    <div id="booking-form" class="hidden">
+        <h2>Enter Your Details</h2>
+        <form id="seat-booking-form">
+            <input type="hidden" id="row-index" name="rowIndex">
+            <input type="hidden" id="col-index" name="colIndex">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Your Name" required>
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" name="phone" placeholder="Your Phone Number" required>
+            <button type="submit">Confirm Booking</button>
+        </form>
     </div>
 
     <script src="/js/app.js"></script>
     <script src="/js/theme.js"></script>
+    <script>
+        // Handle seat selection and show the booking form
+        document.querySelectorAll(".seat.available").forEach(seat => {
+            seat.addEventListener("click", function () {
+                const rowIndex = this.getAttribute("data-row");
+                const colIndex = this.getAttribute("data-col");
+
+                // Populate form with seat details
+                document.getElementById("row-index").value = rowIndex;
+                document.getElementById("col-index").value = colIndex;
+
+                // Show the form
+                document.getElementById("booking-form").classList.remove("hidden");
+            });
+        });
+
+        // Handle form submission
+        document.getElementById("seat-booking-form").addEventListener("submit", async function (e) {
+            e.preventDefault();
+
+            const busId = "{{bus.id}}";
+            const rowIndex = document.getElementById("row-index").value;
+            const colIndex = document.getElementById("col-index").value;
+            const name = document.getElementById("name").value;
+            const phone = document.getElementById("phone").value;
+
+            const response = await fetch(`/reserve-seat/${busId}`, {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ rowIndex, colIndex, name, phone }),
+            });
+
+            const result = await response.json();
+            if (result.success) {
+                alert(`Seat booked successfully! Your ticket number is ${result.ticketNumber}`);
+                location.reload(); // Reload the page to update seat statuses
+            } else {
+                alert(`Error: ${result.error}`);
+            }
+        });
+    </script>
 </body>
 </html>

@@ -48,7 +48,7 @@ app.get("/select-seat/:busId", (req, res) => {
 // Reserve a seat
 app.post("/reserve-seat/:busId", (req, res) => {
   const busId = parseInt(req.params.busId);
-  const { rowIndex, colIndex } = req.body;
+  const { rowIndex, colIndex, name, phone } = req.body;
 
   const bus = buses.find((b) => b.id === busId);
   if (!bus) {
@@ -68,7 +68,13 @@ app.post("/reserve-seat/:busId", (req, res) => {
     return res.status(400).json({ error: "Seat already booked" });
   }
 
-  bus.seats[rowIndex][colIndex] = true;
+  const ticketNumber = `${busId}-${rowIndex}-${colIndex}`;
+  bus.seats[rowIndex][colIndex] = {
+    booked: true,
+    name,
+    phone,
+    ticketNumber,
+  };
 
   // Save the updated buses array back to the JSON file
   const busesFilePath = path.join(__dirname, "data", "buses.json");
@@ -77,8 +83,40 @@ app.post("/reserve-seat/:busId", (req, res) => {
       console.error("Error saving seat reservation:", err);
       return res.status(500).json({ error: "Failed to save seat reservation" });
     }
-    res.json({ success: true });
+    res.json({ success: true, ticketNumber });
   });
+});
+
+// Retrieve booking details
+app.get("/booking/:ticketNumber", (req, res) => {
+  const ticketNumber = req.params.ticketNumber;
+
+  for (const bus of buses) {
+    for (let rowIndex = 0; rowIndex < bus.seats.length; rowIndex++) {
+      for (
+        let colIndex = 0;
+        colIndex < bus.seats[rowIndex].length;
+        colIndex++
+      ) {
+        const seat = bus.seats[rowIndex][colIndex];
+        if (seat && seat.ticketNumber === ticketNumber) {
+          return res.json({
+            success: true,
+            bus: bus.name,
+            from: bus.from,
+            to: bus.to,
+            departure: bus.departure,
+            arrival: bus.arrival,
+            seat: { rowIndex, colIndex },
+            name: seat.name,
+            phone: seat.phone,
+          });
+        }
+      }
+    }
+  }
+
+  res.status(404).json({ error: "Booking not found" });
 });
 
 const PORT = 3000;

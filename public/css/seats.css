@@ -182,3 +182,38 @@ h1 {
     font-size: 1rem;
   }
 }
+#booking-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#seat-booking-form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  color: var(--text-color);
+}
+
+#seat-booking-form input {
+  color: black;
+  padding: 5px 5px;
+  border-radius: 15px;
+}
+
+#seat-booking-form button {
+  color: black;
+  background-color: var(--button-color);
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 15px;
+  margin-bottom: 50px;
+  transition: all 0.3s linear;
+}
+#seat-booking-form button:hover {
+  background-color: var(--secondary-color);
+  scale: 1.05;
+}
